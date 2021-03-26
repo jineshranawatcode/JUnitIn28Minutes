@@ -15,7 +15,7 @@ public class ArraysCompareTest {
 		Arrays.sort(numbers);
 		assertArrayEquals(expected, numbers);
 	}
-
+// Test to see if output is correct
 	@Test(expected=NullPointerException.class)
 	public void testArraySort_NullArray() {
 		int[] numbers = null;
@@ -29,6 +29,9 @@ public class ArraysCompareTest {
 		{
 			array[0] = i;
 			Arrays.sort(array);
+		}
+		for(int i=0;i<=array.length;i++){
+			System.out.println(array[i]);
 		}
 	}
 
